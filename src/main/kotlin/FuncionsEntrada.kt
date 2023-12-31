@@ -1,5 +1,3 @@
-import org.example.RED
-import org.example.RESET
 import java.util.Scanner
 
 fun llegirInt(mensaje:String,intMin:Int,intMax:Int):Int{

@@ -1,6 +1,4 @@
-package org.example
-
-import java.util.*
+import java.util.Scanner
 
 val scan: Scanner = Scanner(System.`in`)
 
@@ -24,7 +22,7 @@ fun readWord(pMessageIn: String
         correctDataType = scan.hasNext()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.next()
         }
@@ -54,7 +52,7 @@ fun readSentence(pMessageIn: String
         correctDataType = scan.hasNext()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextLine()
         }
@@ -83,7 +81,7 @@ fun readChar(pMessageIn: String
         correctDataType = scan.hasNext()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             // Get the first character of the input word from scan.next()
             outputValue = scan.next()[0]
@@ -116,7 +114,7 @@ fun readChar(pMessageIn: String
         correctDataType = scan.hasNext()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = if (pCase == 0) scan.next()[0].lowercaseChar()
             else scan.next()[0].uppercaseChar()
@@ -147,7 +145,7 @@ fun readBoolean(pMessageIn: String
         correctDataType = scan.hasNextBoolean()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextBoolean()
         }
@@ -177,9 +175,44 @@ fun readInt(pMessageIn: String
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextInt()
+        }
+        scan.nextLine()
+    }while(!correctDataType)
+
+    return outputValue
+}
+
+/**
+ * This method can be used to read an Int value from the user through keyboard using java.util.Scanner with a min value
+ * @author raimon.izard
+ * @author picuu
+ * @since 19/12/2023
+ * @param pMessageIn Input message to be shown to the user
+ * @param pMessageErrorDT Data type error message to be shown to the user
+ * @param pMessageErrorDV Data value error message to be shown to the user
+ * @param pMin Min accepted value
+ * @return outputValue Output value
+ */
+fun readInt(pMessageIn: String, pMessageErrorDT: String, pMessageErrorDV:String, pMin: Int): Int {
+    var outputValue: Int = 0
+    var correctDataType: Boolean = false
+
+    do{
+        println(pMessageIn)
+        correctDataType = scan.hasNextInt()
+
+        if (!correctDataType){
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
+        }else{
+            outputValue = scan.nextInt()
+
+            if (outputValue < pMin){
+                println(YELLOW_BOLD_BRIGHT + "WARNING: " + pMessageErrorDV + RESET)
+                correctDataType = false
+            }
         }
         scan.nextLine()
     }while(!correctDataType)
@@ -213,7 +246,7 @@ fun readInt(pMessageIn: String
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextInt()
 
@@ -247,7 +280,7 @@ fun readFloat(pMessageIn: String
         correctDataType = scan.hasNextFloat()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextFloat()
         }
@@ -283,7 +316,7 @@ fun readFloat(pMessageIn: String
         correctDataType = scan.hasNextFloat()
 
         if (!correctDataType){
-            println(RED_BACKGROUND_BRIGHT + "ERROR: " + pMessageErrorDT + RESET)
+            println(RED_BACKGROUND_BRIGHT + BLACK_BOLD + "ERROR: " + pMessageErrorDT + RESET)
         }else{
             outputValue = scan.nextFloat()
 

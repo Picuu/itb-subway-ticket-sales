@@ -1,8 +1,4 @@
-import org.example.readBoolean
-import java.util.Scanner
-
 fun main() {
-    val scanner = Scanner(System.`in`)
 
     do {
         mostrarMenuBitllets()

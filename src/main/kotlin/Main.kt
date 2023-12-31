@@ -16,7 +16,7 @@ fun main() {
         // TODO: Indicar a l'usuari el preu total.
         introduirDiners(preuTotal)
 
-        imprimirBitllets(tipusBitllet, zones)
+        println(imprimirBitllets(tipusBitllet, zones))
 
         val volTiquet = demanarTiquet()
         if (volTiquet) {
@@ -70,9 +70,20 @@ fun introduirDiners(preuTotal: Float) {
     // Pots utilitzar la funció llegirDouble per llegir els diners
 }
 
-fun imprimirBitllets(tipusBitllet: Int, zones: Int) {
+fun imprimirBitllets(tipusBitllet: Int, zones: Int): String {
     // Lògica per imprimir els bitllets
     // Pots utilitzar ASCII art per millorar la presentació
+
+    val bitllet:String = "  _______                         _      _  _  _  _          _   \n" +
+            " |__   __|                       | |    (_)| |(_)| |        | |  \n" +
+            "    | | ______  _ __ ___    ___  | |__   _ | | _ | |_  __ _ | |_ \n" +
+            "    | ||______|| '_ ` _ \\  / _ \\ | '_ \\ | || || || __|/ _` || __|\n" +
+            "    | |        | | | | | || (_) || |_) || || || || |_| (_| || |_ \n" +
+            "    |_|        |_| |_| |_| \\___/ |_.__/ |_||_||_| \\__|\\__,_| \\__|\n" +
+            "                                                                 \n" +
+            "                                                                 "
+
+    return bitllet
 }
 
 fun demanarTiquet(): Boolean {

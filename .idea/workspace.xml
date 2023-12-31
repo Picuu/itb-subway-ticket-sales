@@ -4,7 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="change how main program works and add some TODOs">
+    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="add logic to calcularPreu() function">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -102,7 +103,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704041282146</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add logic to calcularPreu() function">
+      <option name="closed" value="true" />
+      <created>1704041794971</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704041794971</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -113,6 +122,7 @@
     <MESSAGE value="add colors to initial tickets menu" />
     <MESSAGE value="update read functions" />
     <MESSAGE value="change how main program works and add some TODOs" />
-    <option name="LAST_COMMIT_MESSAGE" value="change how main program works and add some TODOs" />
+    <MESSAGE value="add logic to calcularPreu() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="add logic to calcularPreu() function" />
   </component>
 </project>

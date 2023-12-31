@@ -43,14 +43,29 @@ fun introduirZones(): Int {
     return readInt(BLUE + "Introdueix el nombre de zones (1, 2 o 3): $RESET", "Introdueix un número!", "Valor fora del rang esperat!", 1, 3)
 }
 
-fun calcularPreu(tipusBitllet: Int, zones: Int): Double {
+/**
+ * Aquest mètode calcula el preu del bitllet en funció de quin tipus és i les zones escollides.
+ * @author AlanTeixido
+ * @author Picuu
+ * @since 31/12/2023
+ * @param tipusBitllet Enter que representa el tipus de bitllet.
+ * @param zones Enter que representa les zones que l'usuari ha escollit pel seu bitllet.
+ * @return Preu final del bitllet.
+ */
+fun calcularPreu(tipusBitllet: Int, zones: Int): Float {
     // Lògica per calcular el preu segons el tipus de bitllet i les zones
     // Retorna el preu calculat
 
-    return 20.00
+    val preus:Array<Float> = arrayOf(2.40f, 11.35f, 40f, 10f, 80f)
+    var preu:Float = preus[tipusBitllet-1]
+
+    if (zones == 2) preu *= 1.3125f
+    else if (zones == 3) preu *= 1.8443f
+
+    return preu
 }
 
-fun introduirDiners(preuTotal: Double) {
+fun introduirDiners(preuTotal: Float) {
     // Lògica per a que l'usuari introdueixi els diners
     // Pots utilitzar la funció llegirDouble per llegir els diners
 }

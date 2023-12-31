@@ -27,11 +27,11 @@ fun mostrarMenuBitllets() {
 }
 
 fun seleccionarBitllet(): Int {
-    return llegirInt("Selecciona un tipus de bitllet:", 1, 5)
+    return readInt(BLUE + "Selecciona un tipus de bitllet: $RESET", "Introdueix un número!", "Valor fora del rang esperat!", 1, 5)
 }
 
 fun introduirZones(): Int {
-    return llegirInt("Introdueix el nombre de zones (1, 2 o 3):", 1, 3)
+    return readInt(BLUE + "Introdueix el nombre de zones (1, 2 o 3): $RESET", "Introdueix un número!", "Valor fora del rang esperat!", 1, 3)
 }
 
 fun calcularPreu(tipusBitllet: Int, zones: Int): Double {
@@ -52,7 +52,7 @@ fun imprimirBitllets(tipusBitllet: Int, zones: Int) {
 }
 
 fun demanarTiquet(): Boolean {
-    return readBoolean("Vols un tiquet? (true/false):", "Abduskan")
+    return readBoolean(BLUE + "Vols un tiquet? (true/false): $RESET", "Valor introduit incorrecte!")
 }
 
 fun imprimirTiquet() {
@@ -60,5 +60,5 @@ fun imprimirTiquet() {
 }
 
 fun usuariVolContinuar(): Boolean {
-    return readBoolean("Vols continuar comprant? (true/false):", "Abduskan")
+    return readBoolean(BLUE + "Vols continuar comprant? (true/false): $RESET", "Valor introduit incorrecte!")
 }

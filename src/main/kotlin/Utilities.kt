@@ -141,7 +141,7 @@ fun readBoolean(pMessageIn: String
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
+        print(pMessageIn)
         correctDataType = scan.hasNextBoolean()
 
         if (!correctDataType){
@@ -171,7 +171,7 @@ fun readInt(pMessageIn: String
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
+        print(pMessageIn)
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){
@@ -201,7 +201,7 @@ fun readInt(pMessageIn: String, pMessageErrorDT: String, pMessageErrorDV:String,
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
+        print(pMessageIn)
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){
@@ -242,7 +242,7 @@ fun readInt(pMessageIn: String
     var correctDataType: Boolean = false
 
     do{
-        println(pMessageIn)
+        print(pMessageIn)
         correctDataType = scan.hasNextInt()
 
         if (!correctDataType){

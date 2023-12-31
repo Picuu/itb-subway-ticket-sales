@@ -1,6 +1,8 @@
 fun main() {
 
     do {
+        println("$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
+
         mostrarMenuBitllets()
         val tipusBitllet = seleccionarBitllet()
         val zones = introduirZones()
@@ -16,12 +18,12 @@ fun main() {
 }
 
 fun mostrarMenuBitllets() {
-    println("Menú de Bitllets:")
-    println("1. Bitllet senzill")
+    println(PURPLE_BOLD_BRIGHT + "Menú de Bitllets:" + RESET)
+    println(PURPLE + "1. Bitllet senzill")
     println("2. TCasual")
     println("3. TUsual")
     println("4. TFamiliar")
-    println("5. TJove")
+    println("5. TJove$RESET")
 }
 
 fun seleccionarBitllet(): Int {

@@ -1,14 +1,23 @@
 fun main() {
 
     do {
-        println("$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
-
+        println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
         mostrarMenuBitllets()
+
         val tipusBitllet = seleccionarBitllet()
         val zones = introduirZones()
         val preuTotal = calcularPreu(tipusBitllet, zones)
+
+        val continuar = usuariVolContinuar()
+        // TODO: Si l'usuari vol continuar, permetre que compri fins a tres tiquets totals. Després mostrar preu total i etc.
+        // TODO: En cas de que no volgui contiunar, mostar preu total en aquell moment i finalitzar.
+        // Encara que no s'ha de finalitzar el programa com a tal, ja que la maquina (en el món real) sempre esta oberta. S'ha de finalitzar la sessió d'aquell usuari com a tal.
+
+        // TODO: Indicar a l'usuari el preu total.
         introduirDiners(preuTotal)
+
         imprimirBitllets(tipusBitllet, zones)
+
         val volTiquet = demanarTiquet()
         if (volTiquet) {
             imprimirTiquet()

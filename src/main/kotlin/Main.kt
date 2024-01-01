@@ -19,10 +19,8 @@ fun main() {
         // TODO: En cas de que no volgui contiunar, mostar preu total en aquell moment i finalitzar.
         // Encara que no s'ha de finalitzar el programa com a tal, ja que la maquina (en el món real) sempre esta oberta. S'ha de finalitzar la sessió d'aquell usuari com a tal.
 
-        // TODO: Indicar a l'usuari el preu total.
         introduirDiners(preuTotal)
-
-        println(imprimirBitllets(tipusBitllet, zona))
+        println(imprimirBitllets())
 
         val volTiquet = demanarTiquet()
         if (volTiquet) {
@@ -101,7 +99,7 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
     return -canvi
 }
 
-fun imprimirBitllets(tipusBitllet: Int, zones: Int): String {
+fun imprimirBitllets(): String {
     // Lògica per imprimir els bitllets
     // Pots utilitzar ASCII art per millorar la presentació
 

@@ -1,4 +1,6 @@
 fun main() {
+    val maxBitllets:Int = 3
+    var quantitat:Int = 0
 
     do {
         println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
@@ -67,9 +69,36 @@ fun calcularPreu(tipusBitllet: Int, zones: Int): Float {
     return preu
 }
 
-fun introduirDiners(preuTotal: Float) {
+/**
+ * Aquest mètode serveix per demanar a l'usuari que pagui el bitllet i mostrar-li el que falta a pagar, així com el seu canvi.
+ * @author AlanTeixido
+ * @author Picuu
+ * @since 01/01/2024
+ * @param preuTotal Preu total de tots els bitllets que es van a pagar.
+ * @param quantitat Quantitat de bitllets que es van a pagar.
+ * @return Canvi per al client.
+ */
+fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
     // Lògica per a que l'usuari introdueixi els diners
     // Pots utilitzar la funció llegirDouble per llegir els diners
+    var canvi:Float = preuTotal
+
+    val dinersValids:Array<Float> = arrayOf(.05f, .10f, .20f, .50f, 1f, 2f, 5f, 10f, 20f, 50f)
+    println("Ha comprat $quantitat bitllets. El preu total és de  $GREEN_BRIGHT$preuTotal€")
+    do {
+        var dinersIntroduits:Float
+        do {
+            dinersIntroduits = readFloat(BLUE + "Introdueixi monedes o bitllets vàlids de EURO..." + RESET, "Introdueixi una moneda o bitllet vàlid!")
+        } while (dinersIntroduits !in dinersValids)
+
+        canvi -= dinersIntroduits
+        canvi = String.format("%.2f", canvi).toFloat()
+        if (canvi > 0) println("Ha introduit $dinersIntroduits€, li resta per pagar $YELLOW$canvi€$RESET")
+    } while (canvi >= 0)
+
+    println("Reculli el seu bitllet i el seu canvi: $YELLOW${-canvi}€$RESET")
+
+    return -canvi
 }
 
 fun imprimirBitllets(tipusBitllet: Int, zones: Int): String {

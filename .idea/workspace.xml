@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="change mostrarMenuBitllets() to work with a loop and an array of the available tickets">
+    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="round price on calcularPreu() and show ticket price">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -134,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704136604948</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="round price on calcularPreu() and show ticket price">
+      <option name="closed" value="true" />
+      <created>1704137624642</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1704137624642</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -148,6 +156,7 @@
     <MESSAGE value="add logic to calcularPreu() function" />
     <MESSAGE value="add ascii art to imprimirBitllets() function" />
     <MESSAGE value="change mostrarMenuBitllets() to work with a loop and an array of the available tickets" />
-    <option name="LAST_COMMIT_MESSAGE" value="change mostrarMenuBitllets() to work with a loop and an array of the available tickets" />
+    <MESSAGE value="round price on calcularPreu() and show ticket price" />
+    <option name="LAST_COMMIT_MESSAGE" value="round price on calcularPreu() and show ticket price" />
   </component>
 </project>

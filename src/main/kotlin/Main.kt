@@ -7,9 +7,10 @@ fun main() {
 
         val tipusBitllet = seleccionarBitllet()
         val zona = introduirZones()
-        println("Ha escollit la opció: ${bitllets[tipusBitllet]}, zona $zona")
+        println("Ha escollit la opció: $GREEN${bitllets[tipusBitllet]}$RESET, ${GREEN}zona $zona$RESET")
 
         val preuTotal = calcularPreu(tipusBitllet, zona)
+        println("El preu del bitllet és de $GREEN_BRIGHT$preuTotal€$RESET")
 
         val continuar = usuariVolContinuar()
         // TODO: Si l'usuari vol continuar, permetre que compri fins a tres tiquets totals. Després mostrar preu total i etc.
@@ -60,6 +61,8 @@ fun calcularPreu(tipusBitllet: Int, zones: Int): Float {
 
     if (zones == 2) preu *= 1.3125f
     else if (zones == 3) preu *= 1.8443f
+
+    preu = String.format("%.2f", preu).toFloat()
 
     return preu
 }

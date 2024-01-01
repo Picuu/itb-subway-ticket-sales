@@ -25,7 +25,8 @@ fun main() {
         // TODO: En cas de que no volgui contiunar, mostar preu total en aquell moment i finalitzar.
         // Encara que no s'ha de finalitzar el programa com a tal, ja que la maquina (en el món real) sempre esta oberta. S'ha de finalitzar la sessió d'aquell usuari com a tal.
 
-        introduirDiners(preuTotal, quantitat)
+        val canvi:Float = introduirDiners(preuTotal, quantitat)
+        println("Reculli el seu bitllet i el seu canvi: $YELLOW$canvi€$RESET")
         println(imprimirBitllets())
 
         if (demanarTiquet()) println(imprimirTiquet(bitlletsComprats, preusBitlletsComprats))
@@ -93,10 +94,9 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
         canvi -= dinersIntroduits
         canvi = String.format("%.2f", canvi).toFloat()
         if (canvi > 0) println("Ha introduit $dinersIntroduits€, li resta per pagar $YELLOW$canvi€$RESET")
-    } while (canvi >= 0)
+    } while (canvi > 0)
 
-    println("Reculli el seu bitllet i el seu canvi: $YELLOW${-canvi}€$RESET")
-
+    if (canvi == 0f) return canvi
     return -canvi
 }
 

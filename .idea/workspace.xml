@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="remove useless params of imprimirBitllets() function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-    </list>
+    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="make main loop infinite" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -167,7 +164,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704141248024</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add logic and documentation to imprimirTiquet() function">
+      <option name="closed" value="true" />
+      <created>1704144089936</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1704144089936</updated>
+    </task>
+    <task id="LOCAL-00013" summary="make main loop infinite">
+      <option name="closed" value="true" />
+      <created>1704144225438</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1704144225438</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,6 +198,8 @@
     <MESSAGE value="add logic and documentation to introduirDiners() function" />
     <MESSAGE value="add one blank line to ticket ascii art" />
     <MESSAGE value="remove useless params of imprimirBitllets() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="remove useless params of imprimirBitllets() function" />
+    <MESSAGE value="add logic and documentation to imprimirTiquet() function" />
+    <MESSAGE value="make main loop infinite" />
+    <option name="LAST_COMMIT_MESSAGE" value="make main loop infinite" />
   </component>
 </project>

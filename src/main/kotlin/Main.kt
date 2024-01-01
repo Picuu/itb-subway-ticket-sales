@@ -5,27 +5,30 @@ fun main() {
     do {
         println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
         val bitllets:Array<String> = arrayOf("Bitllet senzill", "TCasual", "TUsual", "TFamiliar", "TJove")
+        val preus:FloatArray = floatArrayOf(2.40f, 11.35f, 40f, 10f, 80f)
         mostrarMenuBitllets(bitllets)
 
-        val tipusBitllet = seleccionarBitllet()
+        val bitlletsComprats:MutableList<String> = mutableListOf()
+        val tipusBitllet = seleccionarBitllet() - 1
         val zona = introduirZones()
         println("Ha escollit la opció: $GREEN${bitllets[tipusBitllet]}$RESET, ${GREEN}zona $zona$RESET")
+        quantitat++
+        bitlletsComprats.add("${bitllets[tipusBitllet]} zona $zona")
 
-        val preuTotal = calcularPreu(tipusBitllet, zona)
+        val preusBitlletsComprats:MutableList<Float> = mutableListOf()
+        val preuTotal = calcularPreu(preus, tipusBitllet, zona)
         println("El preu del bitllet és de $GREEN_BRIGHT$preuTotal€$RESET")
+        preusBitlletsComprats.add(preuTotal)
 
         val continuar = usuariVolContinuar()
         // TODO: Si l'usuari vol continuar, permetre que compri fins a tres tiquets totals. Després mostrar preu total i etc.
         // TODO: En cas de que no volgui contiunar, mostar preu total en aquell moment i finalitzar.
         // Encara que no s'ha de finalitzar el programa com a tal, ja que la maquina (en el món real) sempre esta oberta. S'ha de finalitzar la sessió d'aquell usuari com a tal.
 
-        introduirDiners(preuTotal)
+        introduirDiners(preuTotal, quantitat)
         println(imprimirBitllets())
 
-        val volTiquet = demanarTiquet()
-        if (volTiquet) {
-            imprimirTiquet()
-        }
+        if (demanarTiquet()) println(imprimirTiquet(bitlletsComprats, preusBitlletsComprats))
 
     } while (usuariVolContinuar())
 }
@@ -52,12 +55,10 @@ fun introduirZones(): Int {
  * @param zones Enter que representa les zones que l'usuari ha escollit pel seu bitllet.
  * @return Preu final del bitllet.
  */
-fun calcularPreu(tipusBitllet: Int, zones: Int): Float {
+fun calcularPreu(preus:FloatArray, tipusBitllet: Int, zones: Int): Float {
     // Lògica per calcular el preu segons el tipus de bitllet i les zones
     // Retorna el preu calculat
-
-    val preus:Array<Float> = arrayOf(2.40f, 11.35f, 40f, 10f, 80f)
-    var preu:Float = preus[tipusBitllet-1]
+    var preu:Float = preus[tipusBitllet]
 
     if (zones == 2) preu *= 1.3125f
     else if (zones == 3) preu *= 1.8443f
@@ -120,8 +121,29 @@ fun demanarTiquet(): Boolean {
     return readBoolean(BLUE + "Vols un tiquet? (true/false): $RESET", "Valor introduit incorrecte!")
 }
 
-fun imprimirTiquet() {
+/**
+ * Aquest mètode serveix per obtenir un String que representa el tiquet de la compra.
+ * @author AlanTeixido
+ * @author Picuu
+ * @since 01/01/2024
+ * @param bitlletsComprats Llista que conté el nom i la zona de cada bitllet que s'ha comprat.
+ * @param preusBitlletsComprats Llista que conté el preu de cada bitllet que s'ha comprat.
+ * @return String del ticket per mostrar a l'usuari.
+ */
+fun imprimirTiquet(bitlletsComprats: MutableList<String>, preusBitlletsComprats: MutableList<Float>): String {
     // Lògica per imprimir el tiquet
+    val tiquetDalt:String = "------------ TIQUET TMB ------------\n"
+    var tiquetInfo:String = ""
+    val tiquetBaix:String = "\n------------------------------------\n"
+
+    for (bitllet in bitlletsComprats.indices) {
+        tiquetInfo += bitlletsComprats[bitllet] + " - Preu: ${preusBitlletsComprats[bitllet]}€"
+    }
+
+    tiquetInfo += "\n\n                 Preu total: ${preusBitlletsComprats.sum()}€"
+
+    val tiquet = tiquetDalt + tiquetInfo + tiquetBaix
+    return tiquet
 }
 
 fun usuariVolContinuar(): Boolean {

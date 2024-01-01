@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="round price on calcularPreu() and show ticket price">
+    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="remove useless params of imprimirBitllets() function">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -47,20 +47,21 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Gradle.Build itb-subway-ticket-sales.executor&quot;: &quot;Run&quot;,
-    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Gradle.Build itb-subway-ticket-sales.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/carlo/school/m03-programacio/itb-subway-ticket-sales",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -142,7 +143,31 @@
       <option name="project" value="LOCAL" />
       <updated>1704137624642</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add logic and documentation to introduirDiners() function">
+      <option name="closed" value="true" />
+      <created>1704140985642</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1704140985642</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add one blank line to ticket ascii art">
+      <option name="closed" value="true" />
+      <created>1704141078530</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1704141078530</updated>
+    </task>
+    <task id="LOCAL-00011" summary="remove useless params of imprimirBitllets() function">
+      <option name="closed" value="true" />
+      <created>1704141248024</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1704141248024</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -157,6 +182,9 @@
     <MESSAGE value="add ascii art to imprimirBitllets() function" />
     <MESSAGE value="change mostrarMenuBitllets() to work with a loop and an array of the available tickets" />
     <MESSAGE value="round price on calcularPreu() and show ticket price" />
-    <option name="LAST_COMMIT_MESSAGE" value="round price on calcularPreu() and show ticket price" />
+    <MESSAGE value="add logic and documentation to introduirDiners() function" />
+    <MESSAGE value="add one blank line to ticket ascii art" />
+    <MESSAGE value="remove useless params of imprimirBitllets() function" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove useless params of imprimirBitllets() function" />
   </component>
 </project>

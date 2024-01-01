@@ -2,7 +2,7 @@ fun main() {
     val maxBitllets:Int = 3
     var quantitat:Int = 0
 
-    do {
+    while (true) {
         println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
         val bitllets:Array<String> = arrayOf("Bitllet senzill", "TCasual", "TUsual", "TFamiliar", "TJove")
         val preus:FloatArray = floatArrayOf(2.40f, 11.35f, 40f, 10f, 80f)
@@ -30,7 +30,7 @@ fun main() {
 
         if (demanarTiquet()) println(imprimirTiquet(bitlletsComprats, preusBitlletsComprats))
 
-    } while (usuariVolContinuar())
+    }
 }
 
 fun mostrarMenuBitllets(bitllets:Array<String>) {

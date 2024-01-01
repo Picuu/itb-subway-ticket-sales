@@ -2,11 +2,14 @@ fun main() {
 
     do {
         println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
-        mostrarMenuBitllets()
+        val bitllets:Array<String> = arrayOf("Bitllet senzill", "TCasual", "TUsual", "TFamiliar", "TJove")
+        mostrarMenuBitllets(bitllets)
 
         val tipusBitllet = seleccionarBitllet()
-        val zones = introduirZones()
-        val preuTotal = calcularPreu(tipusBitllet, zones)
+        val zona = introduirZones()
+        println("Ha escollit la opció: ${bitllets[tipusBitllet]}, zona $zona")
+
+        val preuTotal = calcularPreu(tipusBitllet, zona)
 
         val continuar = usuariVolContinuar()
         // TODO: Si l'usuari vol continuar, permetre que compri fins a tres tiquets totals. Després mostrar preu total i etc.
@@ -16,7 +19,7 @@ fun main() {
         // TODO: Indicar a l'usuari el preu total.
         introduirDiners(preuTotal)
 
-        println(imprimirBitllets(tipusBitllet, zones))
+        println(imprimirBitllets(tipusBitllet, zona))
 
         val volTiquet = demanarTiquet()
         if (volTiquet) {
@@ -26,13 +29,9 @@ fun main() {
     } while (usuariVolContinuar())
 }
 
-fun mostrarMenuBitllets() {
+fun mostrarMenuBitllets(bitllets:Array<String>) {
     println(PURPLE_BOLD_BRIGHT + "Menú de Bitllets:" + RESET)
-    println(PURPLE + "1. Bitllet senzill")
-    println("2. TCasual")
-    println("3. TUsual")
-    println("4. TFamiliar")
-    println("5. TJove$RESET")
+    for (i in bitllets.indices) println("$PURPLE${i+1}. ${bitllets[i]}$RESET")
 }
 
 fun seleccionarBitllet(): Int {

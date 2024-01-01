@@ -105,7 +105,8 @@ fun imprimirBitllets(tipusBitllet: Int, zones: Int): String {
     // Lògica per imprimir els bitllets
     // Pots utilitzar ASCII art per millorar la presentació
 
-    val bitllet:String = "  _______                         _      _  _  _  _          _   \n" +
+    val bitllet:String = "\n" +
+            "  _______                         _      _  _  _  _          _   \n" +
             " |__   __|                       | |    (_)| |(_)| |        | |  \n" +
             "    | | ______  _ __ ___    ___  | |__   _ | | _ | |_  __ _ | |_ \n" +
             "    | ||______|| '_ ` _ \\  / _ \\ | '_ \\ | || || || __|/ _` || __|\n" +

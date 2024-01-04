@@ -42,5 +42,5 @@ This is an example of the code execution:
 
 ## 🙌 Contributors
 <a href="https://github.com/your-username/your-project-name/graphs/contributors">
-<img src="https://contrib.rocks/image?repo=your-username/your-project-name" alt="contributors of the project"/>
+<img src="https://github.com/AlanTeixido/itb-subway-ticket-sales/graphs/contributors" alt="contributors of the project"/>
 </a>

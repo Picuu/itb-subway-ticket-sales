@@ -332,7 +332,7 @@ fun readFloat(pMessageIn: String
 }
 
 /**
- * This method can be used to read a Float value from the user through keyboard using java.util.Scanner in within a range
+ * This method can be used to round the decimals of a number to a specified amount.
  * @author picuu
  * @since 04/01/2024
  * @param num Number to be rounded.

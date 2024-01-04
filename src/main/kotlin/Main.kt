@@ -35,7 +35,7 @@ fun main() {
 
         val preuTotal:Float = preusBitlletsComprats.sum()
         val canvi: Float = introduirDiners(preuTotal, quantitat)
-        println("Reculli el seu bitllet i el seu canvi: $YELLOW$canvi€$RESET")
+        println("Reculli els seus bitllets i el seu canvi: $YELLOW$canvi€$RESET")
         println(imprimirBitllets())
 
         if (demanarTiquet()) println(imprimirTiquet(bitlletsComprats, preusBitlletsComprats))
@@ -107,7 +107,7 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
     var canvi:Float = preuTotal
 
     val dinersValids:Array<Float> = arrayOf(.05f, .10f, .20f, .50f, 1f, 2f, 5f, 10f, 20f, 50f)
-    println("Ha comprat $quantitat bitllets. El preu total és de  $GREEN_BRIGHT${roundToFloat(preuTotal, 2)}€")
+    println("Ha comprat $quantitat bitllets. El preu total és de $GREEN_BRIGHT${roundToFloat(preuTotal, 2)}€")
     do {
         var dinersIntroduits:Float
         do {

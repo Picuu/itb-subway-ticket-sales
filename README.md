@@ -36,3 +36,6 @@ This is an example of the code execution:
 <a href="https://github.com/Picuu/itb-subway-ticket-sales/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=Picuu/itb-subway-ticket-sales" alt="contributors of the project"/>
 </a>
+
+- [Carlos Capó](https://github.com/Picuu)
+- [Alan Teixidó](https://github.com/AlanTeixido)

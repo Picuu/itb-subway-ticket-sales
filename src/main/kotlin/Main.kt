@@ -116,7 +116,7 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
 
         canvi -= dinersIntroduits
         canvi = roundToFloat(canvi, 2)
-        if (canvi > 0) println("Ha introduit $dinersIntroduits€, li resta per pagar $YELLOW$canvi€$RESET")
+        if (canvi > 0) println("Ha introduit $GREEN$dinersIntroduits€$RESET, li resta per pagar $YELLOW$canvi€$RESET")
     } while (canvi > 0)
 
     if (canvi == 0f) return canvi

@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="use roundToFloat() on calcularPreu() function">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a3be165e-7534-41c2-a4a6-5f96d8f51ec2" name="Changes" comment="fix incorrect documentation of roundToFloat() method">
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -211,7 +211,15 @@
       <option name="project" value="LOCAL" />
       <updated>1704383627236</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="fix incorrect documentation of roundToFloat() method">
+      <option name="closed" value="true" />
+      <created>1704384766738</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1704384766738</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -232,6 +240,7 @@
     <MESSAGE value="add logic and documentation to imprimirTiquet() function" />
     <MESSAGE value="make main loop infinite" />
     <MESSAGE value="use roundToFloat() on calcularPreu() function" />
-    <option name="LAST_COMMIT_MESSAGE" value="use roundToFloat() on calcularPreu() function" />
+    <MESSAGE value="fix incorrect documentation of roundToFloat() method" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix incorrect documentation of roundToFloat() method" />
   </component>
 </project>

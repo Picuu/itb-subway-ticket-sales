@@ -1,9 +1,8 @@
 <p align="center">
   <a href="https://github.com/your-username/your-project-name" target="_blank">
-    <img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png)' width="100%" alt="Banner" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png" width="100%" alt="Banner" />
   </a>
 </p>
-
 
 ## 📌 Overview
 
@@ -21,8 +20,6 @@ Modular Kotlin project for managing TMB subway ticket sales.
 - [src/main/kotlin/VWfunctions.kt](src/main/kotlin/FuncionsEntrada.kt): Modular file with methods to execute the main application.
 - [src/main/kotlin/utilities.kt](src/main/kotlin/Utilities.kt): Modular file with reusable methods.
 - [src/main/kotlin/consoleColors.kt](src/main/kotlin/ConsoleColors.kt): File with constants for terminal colors.
-
----
 
 > [!NOTE]
 > The project calculates subway ticket prices based on user selections.

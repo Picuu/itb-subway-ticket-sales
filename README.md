@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/your-username/your-project-name" target="_blank">
-    <img src='[https://dca.cat/wp-content/uploads/2022/05/ITB_Logo_ITBdesc_800-Direccio-ITB-Alberto-Vila.png](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png)' width="100%" alt="Banner" />
+    <img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg' width="100%" alt="Banner" />
   </a>
 </p>
 
@@ -9,50 +9,49 @@
   <img src="https://img.shields.io/github/last-commit/your-username/your-project-name?style=for-the-badge" alt="GitHub last commit" />
   <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin logo" />
   <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA logo" />
-  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="ITB logo" />
-
 </p>
 
-## 📌 Overview 📌
+## 📌 Overview
 
-Brief description of your project.
+Modular Kotlin project for managing TMB subway ticket sales.
 
-## 🔍 Table of Contents 🔍
+## 🔍 Table of Contents
 
 * [📝 Project Summary](#-project-summary)
 * [🚀 Execution](#-execution)
 * [🙌 Contributors](#-contributors)
 
-## 📝 Project Summary 📝
+## 📝 Project Summary
 
-- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Code of the main application.
-  ![image](https://your-project-repo-url/assets/image1.png)
+- [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Main application code.
+  ![Main Application](https://github.com/your-username/your-project-name/assets/main_application.png)
 
 - [src/main/kotlin/VWfunctions.kt](src/main/kotlin/VWfunctions.kt): Modular file with methods to execute the main application.
 - [src/main/kotlin/utilities.kt](src/main/kotlin/utilities.kt): Modular file with reusable methods.
-- [src/main/kotlin/consoleColors.kt](src/main/kotlin/consoleColors.kt): File with constants with all the colors for the terminal.
+- [src/main/kotlin/consoleColors.kt](src/main/kotlin/consoleColors.kt): File with constants for terminal colors.
 
 ---
 
 > [!NOTE]
-> Additional information about your project or code.
+> The project calculates subway ticket prices based on user selections.
 
-![image](https://your-project-repo-url/assets/image2.png)
+![Price Calculation](https://github.com/your-username/your-project-name/assets/price_calculation.png)
 
-## 🚀 Execution 🚀
+## 🚀 Execution
 
 > [!CAUTION]
-> Information about any specific requirements for running the application.
+> To execute the application, you need the **Amazon Corretto 20 SDK**.
 
 This is an example of the code execution:
-![image](https://your-project-repo-url/assets/image3.png)
+![Code Execution](https://github.com/your-username/your-project-name/assets/code_execution.png)
 
 > [!IMPORTANT]
-> Any important notes or warnings about the execution.
+> All functions include data type error and range error control.
+> The program is safe to use without any problems.
 
-![image](https://your-project-repo-url/assets/image4.png)
+![Safe Execution](https://github.com/your-username/your-project-name/assets/safe_execution.png)
 
-## 🙌 Contributors 🙌
+## 🙌 Contributors
 <a href="https://github.com/your-username/your-project-name/graphs/contributors">
 <img src="https://contrib.rocks/image?repo=your-username/your-project-name" alt="contributors of the project"/>
 </a>

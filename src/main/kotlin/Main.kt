@@ -165,10 +165,10 @@ fun imprimirTiquet(bitlletsComprats: MutableList<String>, preusBitlletsComprats:
     val tiquetBaix:String = "\n------------------------------------\n"
 
     for (bitllet in bitlletsComprats.indices) {
-        tiquetInfo += bitlletsComprats[bitllet] + " - Preu: ${preusBitlletsComprats[bitllet]}€"
+        tiquetInfo += bitlletsComprats[bitllet] + " - Preu: ${preusBitlletsComprats[bitllet]}€\n"
     }
 
-    tiquetInfo += "\n\n                 Preu total: ${preusBitlletsComprats.sum()}€"
+    tiquetInfo += "\n                 Preu total: ${preusBitlletsComprats.sum()}€"
 
     val tiquet = tiquetDalt + tiquetInfo + tiquetBaix
     return tiquet

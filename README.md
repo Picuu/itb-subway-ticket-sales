@@ -18,11 +18,9 @@ Modular Kotlin project for managing TMB subway ticket sales.
 ## 📝 Project Summary
 
 - [src/main/kotlin/Main.kt](src/main/kotlin/Main.kt): Main application code.
-  ![Main Application](https://github.com/your-username/your-project-name/assets/main_application.png)
-
-- [src/main/kotlin/VWfunctions.kt](src/main/kotlin/VWfunctions.kt): Modular file with methods to execute the main application.
-- [src/main/kotlin/utilities.kt](src/main/kotlin/utilities.kt): Modular file with reusable methods.
-- [src/main/kotlin/consoleColors.kt](src/main/kotlin/consoleColors.kt): File with constants for terminal colors.
+- [src/main/kotlin/VWfunctions.kt](src/main/kotlin/FuncionsEntrada.kt): Modular file with methods to execute the main application.
+- [src/main/kotlin/utilities.kt](src/main/kotlin/Utilities.kt): Modular file with reusable methods.
+- [src/main/kotlin/consoleColors.kt](src/main/kotlin/ConsoleColors.kt): File with constants for terminal colors.
 
 ---
 
@@ -34,7 +32,7 @@ Modular Kotlin project for managing TMB subway ticket sales.
 ## 🚀 Execution
 
 > [!CAUTION]
-> To execute the application, you need the **Amazon Corretto 20 SDK**.
+> To execute the application, you need the **Amazon Corretto 17 SDK**.
 
 This is an example of the code execution:
 ![Code Execution](https://github.com/your-username/your-project-name/assets/code_execution.png)

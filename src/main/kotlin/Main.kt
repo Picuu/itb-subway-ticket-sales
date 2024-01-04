@@ -1,3 +1,9 @@
+/**
+ * @author AlanTeixido
+ * @author Picuu
+ * Aquest mètode s'encarrega de gestionar la venda de bitllets a TMB.
+ * ...
+ */
 fun main() {
     val maxBitllets:Int = 3
     var quantitat:Int = 0
@@ -43,15 +49,28 @@ fun main() {
     }
 }
 
+/**
+ * Mostra el menú dels bitllets disponibles.
+ * ...
+ */
 fun mostrarMenuBitllets(bitllets:Array<String>) {
     println(PURPLE_BOLD_BRIGHT + "Menú de Bitllets:" + RESET)
     for (i in bitllets.indices) println("$PURPLE${i+1}. ${bitllets[i]}$RESET")
 }
 
+/**
+ * Demana a l'usuari que seleccioni un tipus de bitllet.
+ * ...
+ * @return El número del bitllet seleccionat.
+ */
 fun seleccionarBitllet(): Int {
     return readInt(BLUE + "Selecciona un tipus de bitllet: $RESET", "Introdueix un número!", "Valor fora del rang esperat!", 1, 5)
 }
-
+/**
+ * Demana a l'usuari que introdueixi el nombre de zones.
+ * ...
+ * @return El nombre de zones seleccionades.
+ */
 fun introduirZones(): Int {
     return readInt(BLUE + "Introdueix el nombre de zones (1, 2 o 3): $RESET", "Introdueix un número!", "Valor fora del rang esperat!", 1, 3)
 }
@@ -64,6 +83,15 @@ fun introduirZones(): Int {
  * @param tipusBitllet Enter que representa el tipus de bitllet.
  * @param zones Enter que representa les zones que l'usuari ha escollit pel seu bitllet.
  * @return Preu final del bitllet.
+ */
+
+/**
+ * Calcula el preu d'un bitllet en funció del tipus i les zones.
+ * ...
+ * @param preus Els preus dels diferents tipus de bitllets.
+ * @param tipusBitllet El tipus de bitllet seleccionat.
+ * @param zones El nombre de zones seleccionades.
+ * @return El preu final del bitllet.
  */
 fun calcularPreu(preus:FloatArray, tipusBitllet: Int, zones: Int): Float {
     // Lògica per calcular el preu segons el tipus de bitllet i les zones
@@ -79,16 +107,14 @@ fun calcularPreu(preus:FloatArray, tipusBitllet: Int, zones: Int): Float {
 }
 
 /**
- * Aquest mètode serveix per demanar a l'usuari que pagui el bitllet i mostrar-li el que falta a pagar, així com el seu canvi.
- * @author AlanTeixido
- * @author Picuu
- * @since 01/01/2024
- * @param preuTotal Preu total de tots els bitllets que es van a pagar.
- * @param quantitat Quantitat de bitllets que es van a pagar.
- * @return Canvi per al client.
+ * Gestiona la introducció dels diners per al pagament dels bitllets.
+ * ...
+ * @param preuTotal El preu total dels bitllets a pagar.
+ * @param quantitat La quantitat de bitllets que es volen comprar.
+ * @return El canvi per al client.
  */
 fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
-    // Lògica per a que l'usuari introdueixi els diners
+    // Lògica perquè l'usuari introdueixi els diners
     // Pots utilitzar la funció llegirDouble per llegir els diners
     var canvi:Float = preuTotal
 
@@ -109,6 +135,11 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
     return -canvi
 }
 
+/**
+ * Imprimeix una representació visual dels bitllets comprats.
+ * ...
+ * @return Una cadena amb l'art ASCII dels bitllets.
+ */
 fun imprimirBitllets(): String {
     // Lògica per imprimir els bitllets
     // Pots utilitzar ASCII art per millorar la presentació
@@ -126,18 +157,21 @@ fun imprimirBitllets(): String {
     return bitllet
 }
 
+/**
+ * Demana a l'usuari si vol un tiquet de la compra.
+ * ...
+ * @return `true` si l'usuari vol un tiquet, `false` altrament.
+ */
 fun demanarTiquet(): Boolean {
     return readBoolean(BLUE + "Vols un tiquet? (true/false): $RESET", "Valor introduit incorrecte!")
 }
 
 /**
- * Aquest mètode serveix per obtenir un String que representa el tiquet de la compra.
- * @author AlanTeixido
- * @author Picuu
- * @since 01/01/2024
- * @param bitlletsComprats Llista que conté el nom i la zona de cada bitllet que s'ha comprat.
- * @param preusBitlletsComprats Llista que conté el preu de cada bitllet que s'ha comprat.
- * @return String del ticket per mostrar a l'usuari.
+ * Imprimeix un tiquet amb la informació de la compra.
+ * ...
+ * @param bitlletsComprats La llista amb els bitllets comprats.
+ * @param preusBitlletsComprats La llista amb els preus dels bitllets comprats.
+ * @return Una cadena amb la informació del tiquet.
  */
 fun imprimirTiquet(bitlletsComprats: MutableList<String>, preusBitlletsComprats: MutableList<Float>): String {
     // Lògica per imprimir el tiquet
@@ -155,6 +189,11 @@ fun imprimirTiquet(bitlletsComprats: MutableList<String>, preusBitlletsComprats:
     return tiquet
 }
 
+/**
+ * Pregunta a l'usuari si vol continuar comprant.
+ * ...
+ * @return `true` si l'usuari vol continuar, `false` altrament.
+ */
 fun usuariVolContinuar(): Boolean {
     return readBoolean(BLUE + "Vols continuar comprant? (true/false): $RESET", "Valor introduit incorrecte!")
 }

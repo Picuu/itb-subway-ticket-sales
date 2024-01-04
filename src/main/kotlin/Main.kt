@@ -3,34 +3,43 @@ fun main() {
     var quantitat:Int = 0
 
     while (true) {
+        var continuar:Boolean = true
+
         println("\n$WHITE_BACKGROUND_BRIGHT$BLACK_BOLD VENDA BITLLETS TMB $RESET")
         val bitllets:Array<String> = arrayOf("Bitllet senzill", "TCasual", "TUsual", "TFamiliar", "TJove")
         val preus:FloatArray = floatArrayOf(2.40f, 11.35f, 40f, 10f, 80f)
-        mostrarMenuBitllets(bitllets)
 
         val bitlletsComprats:MutableList<String> = mutableListOf()
-        val tipusBitllet = seleccionarBitllet() - 1
-        val zona = introduirZones()
-        println("Ha escollit la opció: $GREEN${bitllets[tipusBitllet]}$RESET, ${GREEN}zona $zona$RESET")
-        quantitat++
-        bitlletsComprats.add("${bitllets[tipusBitllet]} zona $zona")
+        val preusBitlletsComprats: MutableList<Float> = mutableListOf()
 
-        val preusBitlletsComprats:MutableList<Float> = mutableListOf()
-        val preuTotal = calcularPreu(preus, tipusBitllet, zona)
-        println("El preu del bitllet és de $GREEN_BRIGHT$preuTotal€$RESET")
-        preusBitlletsComprats.add(preuTotal)
+        while (quantitat < maxBitllets && continuar) {
+            mostrarMenuBitllets(bitllets)
 
-        val continuar = usuariVolContinuar()
-        // TODO: Si l'usuari vol continuar, permetre que compri fins a tres tiquets totals. Després mostrar preu total i etc.
-        // TODO: En cas de que no volgui contiunar, mostar preu total en aquell moment i finalitzar.
-        // Encara que no s'ha de finalitzar el programa com a tal, ja que la maquina (en el món real) sempre esta oberta. S'ha de finalitzar la sessió d'aquell usuari com a tal.
+            val tipusBitllet = seleccionarBitllet() - 1
+            val zona = introduirZones()
+            println("Ha escollit la opció: $GREEN${bitllets[tipusBitllet]}$RESET, ${GREEN}zona $zona$RESET")
+            quantitat++
+            bitlletsComprats.add("${bitllets[tipusBitllet]} zona $zona")
 
-        val canvi:Float = introduirDiners(preuTotal, quantitat)
+            val preuBitllet = calcularPreu(preus, tipusBitllet, zona)
+            println("El preu del bitllet és de $GREEN_BRIGHT$preuBitllet€$RESET")
+            preusBitlletsComprats.add(preuBitllet)
+
+            if (quantitat != 3) continuar = usuariVolContinuar()
+        }
+
+        val preuTotal:Float = preusBitlletsComprats.sum()
+        val canvi: Float = introduirDiners(preuTotal, quantitat)
         println("Reculli el seu bitllet i el seu canvi: $YELLOW$canvi€$RESET")
         println(imprimirBitllets())
 
         if (demanarTiquet()) println(imprimirTiquet(bitlletsComprats, preusBitlletsComprats))
 
+        println(CYAN + "Gràcies per la seva compra. Torni aviat!" + RESET)
+
+        bitlletsComprats.clear()
+        preusBitlletsComprats.clear()
+        quantitat = 0
     }
 }
 

@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/your-username/your-project-name" target="_blank">
-    <[img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png)' width="100%" alt="Banner" />
+    <img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png)' width="100%" alt="Banner" />
   </a>
 </p>
 

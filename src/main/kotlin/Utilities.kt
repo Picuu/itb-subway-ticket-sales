@@ -330,3 +330,15 @@ fun readFloat(pMessageIn: String
 
     return outputValue
 }
+
+/**
+ * This method can be used to read a Float value from the user through keyboard using java.util.Scanner in within a range
+ * @author picuu
+ * @since 04/01/2024
+ * @param num Number to be rounded.
+ * @param decimals Amount of decimals to round the number.
+ * @return The given num rounded to the specified decimals.
+ */
+fun roundToFloat(num: Number, decimals: Int): Float {
+    return String.format("%.${decimals}f", num).toFloat()
+}

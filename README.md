@@ -1,15 +1,9 @@
 <p align="center">
   <a href="https://github.com/your-username/your-project-name" target="_blank">
-    <img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg' width="100%" alt="Banner" />
+    <[img src='https://carro.sg/blog/wp-content/uploads/2017/08/Excise-Duty-and-GST-.jpg](https://upload.wikimedia.org/wikipedia/commons/thumb/9/9c/Logo_TMB.svg/1280px-Logo_TMB.svg.png)' width="100%" alt="Banner" />
   </a>
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/languages/code-size/your-username/your-project-name?style=for-the-badge" alt="GitHub code size in bytes" />
-  <img src="https://img.shields.io/github/last-commit/your-username/your-project-name?style=for-the-badge" alt="GitHub last commit" />
-  <img src="https://img.shields.io/badge/Kotlin-0095D5?style=for-the-badge&logo=kotlin&logoColor=white" alt="Kotlin logo" />
-  <img src="https://img.shields.io/badge/IntelliJ_IDEA-000000.svg?style=for-the-badge&logo=intellij-idea&logoColor=white" alt="IntelliJ IDEA logo" />
-</p>
 
 ## 📌 Overview
 

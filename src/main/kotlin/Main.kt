@@ -90,7 +90,7 @@ fun calcularPreu(preus:FloatArray, tipusBitllet: Int, zones: Int): Float {
     if (zones == 2) preu *= 1.3125f
     else if (zones == 3) preu *= 1.8443f
 
-    preu = String.format("%.2f", preu).toFloat()
+    preu = roundToFloat(preu, 2)
 
     return preu
 }

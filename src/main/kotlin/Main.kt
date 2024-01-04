@@ -107,7 +107,7 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
     var canvi:Float = preuTotal
 
     val dinersValids:Array<Float> = arrayOf(.05f, .10f, .20f, .50f, 1f, 2f, 5f, 10f, 20f, 50f)
-    println("Ha comprat $quantitat bitllets. El preu total és de  $GREEN_BRIGHT$preuTotal€")
+    println("Ha comprat $quantitat bitllets. El preu total és de  $GREEN_BRIGHT${roundToFloat(preuTotal, 2)}€")
     do {
         var dinersIntroduits:Float
         do {
@@ -115,7 +115,7 @@ fun introduirDiners(preuTotal: Float, quantitat: Int = 1): Float {
         } while (dinersIntroduits !in dinersValids)
 
         canvi -= dinersIntroduits
-        canvi = String.format("%.2f", canvi).toFloat()
+        canvi = roundToFloat(canvi, 2)
         if (canvi > 0) println("Ha introduit $dinersIntroduits€, li resta per pagar $YELLOW$canvi€$RESET")
     } while (canvi > 0)
 
@@ -168,7 +168,7 @@ fun imprimirTiquet(bitlletsComprats: MutableList<String>, preusBitlletsComprats:
         tiquetInfo += bitlletsComprats[bitllet] + " - Preu: ${preusBitlletsComprats[bitllet]}€\n"
     }
 
-    tiquetInfo += "\n                 Preu total: ${preusBitlletsComprats.sum()}€"
+    tiquetInfo += "\n                 Preu total: ${roundToFloat(preusBitlletsComprats.sum(), 2)}€"
 
     val tiquet = tiquetDalt + tiquetInfo + tiquetBaix
     return tiquet

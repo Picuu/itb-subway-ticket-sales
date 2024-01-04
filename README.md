@@ -1,18 +1,27 @@
 # TMB Subway Ticket Sales
 
-Este es un proyecto de venta de boletos para el metro de TMB (Transporte Metropolitano de Barcelona). El programa está escrito en Kotlin y proporciona una interfaz de línea de comandos para que los usuarios compren boletos de metro.
+This is a subway ticket sales project for TMB (Transporte Metropolitano de Barcelona). The program is written in Kotlin and provides a command-line interface for users to purchase metro tickets.
 
-## Características
+## Features
 
-- **Menú Interactivo:** Los usuarios pueden seleccionar el tipo de boleto y la cantidad de zonas deseadas a través de un menú interactivo.
+- **Interactive Menu:** Users can select the ticket type and the desired number of zones through an interactive menu.
 
-- **Cálculo de Precio:** El programa calcula automáticamente el precio del boleto en función del tipo seleccionado y el número de zonas.
+- **Price Calculation:** The program automatically calculates the ticket price based on the selected type and the number of zones.
 
-- **Pago y Tiquet:** Después de seleccionar los boletos, los usuarios ingresan el dinero y reciben un tiquet con detalles de la compra.
+- **Payment and Ticket:** After selecting tickets, users enter money and receive a ticket with details of the purchase.
 
-## Requisitos del Sistema
+## System Requirements
 
-- Java 8 o superior.
+- Java 8 or higher.
 - Kotlin.
 
+## Our ASCII art
 
+          _______                         _      _  _  _  _          _   
+         |__   __|                       | |    (_)| |(_)| |        | |  
+            | | ______  _ __ ___    ___  | |__   _ | | _ | |_  __ _ | |_ 
+            | ||______|| '_ ` _ \\  / _ \\ | '_ \\ | || || || __|/ _` || __|
+            | |        | | | | | || (_) || |_) || || || || |_| (_| || |_ 
+            |_|        |_| |_| |_| \\___/ |_.__/ |_||_||_| \\__|\\__,_| \\__|
+                                                                             
+                                                                             

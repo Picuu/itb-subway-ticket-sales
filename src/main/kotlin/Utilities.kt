@@ -332,12 +332,12 @@ fun readFloat(pMessageIn: String
 }
 
 /**
- * This method can be used to round the decimals of a number to a specified amount.
+ * This method can be used to round the decimals of a Float to a specified amount.
  * @author picuu
  * @since 04/01/2024
- * @param num Number to be rounded.
+ * @param num Float to be rounded.
  * @param decimals Amount of decimals to round the number.
- * @return The given num rounded to the specified decimals.
+ * @return The given number rounded to the specified decimals.
  */
 fun roundToFloat(num: Float, decimals: Int): Float {
     var multiplicator:String = "1"
